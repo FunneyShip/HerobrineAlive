@@ -1,0 +1,10 @@
+EnableHerobrine: true
+EnableZombieMinion: true
+EnableSkeletonMinion: true
+EnableCreeperMinion: true
+EnableGriefing: true
+EnableBuilding: true
+EnableSigns: true
+EnableChat: true
+#This is just a basic structure of the config
+#The finished product will be much better

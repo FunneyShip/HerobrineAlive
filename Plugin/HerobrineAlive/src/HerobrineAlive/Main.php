@@ -1,5 +1,7 @@
 <?php
 
+namespace HerobrineAlive;
+
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
@@ -43,6 +45,36 @@ class Main extends PluginBase implements Listener, CommandExecutor{
          * He will also have disableable minions like zombies, skeletons, and others.
          * He will be able to grief, talk, kill, build, and much more.
          * Many things will be disableable
+         */
+    }
+
+    public function HerobrineChat(){
+        /*
+         * Here will be Herobrines chat messages and a way to send them at random
+         */
+    }
+
+    public function HerobrineSign(){
+        /*
+         * Herobrine will place signs at random using this function
+         */
+    }
+
+    public function HerobrineGrief(){
+        /*
+         * Herobrine will randomly grief if enabled
+         */
+    }
+
+    public function HerobrineBuild(){
+        /*
+         * Herobrine will build at random if enabled
+         */
+    }
+
+    public function HerobrineMinion(){
+        /*
+         * Main Herobrines Minion function
          */
     }
     

@@ -1,0 +1,16 @@
+name: HerobrineAlive
+main: HerobrineAlive\Main
+version: 1.0.0dev
+api: [1.0.0]
+
+load: STARTUP
+authors: [Comedyman937]
+description: Add Herobrine to PocketMine-MP!
+
+commands:
+    herobrinealive:
+        description: "HerobrineAlive Commands!"
+        usage: "/HerobrineAlive <RELEASE|KILL|ATTACK> [PLAYER]"
+        permission: herobrinealive.command.herobrinealive
+permissions:
+    herobrinealive.command.herobrinealive

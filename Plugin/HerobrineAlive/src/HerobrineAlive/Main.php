@@ -19,7 +19,7 @@ class Main extends PluginBase implements Listener, CommandExecutor{
         switch($cmd->getName()){
             case "herobrinealive":
                 if($args[0] == "release"){
-                    //Start HerobrineAI()
+                    $this->getServer()->getScheduler()->scheduleTask(new StartHerobrineAI($this), 1);
                     $sender->sendMessage("[HerobrineAlive] Herobrine has been released!");
                 }elseif($args[0] == "kill"){
                     //Stop HerobrineAI() and remove his entity packets
@@ -37,47 +37,7 @@ class Main extends PluginBase implements Listener, CommandExecutor{
             break;
         }
     }
-    
-    public function HerobrineAI(){
-        /*
-         * Here wil be Herobrines Mob AI and other things.
-         * Herobrine will have his own tag.
-         * He will also have disableable minions like zombies, skeletons, and others.
-         * He will be able to grief, talk, kill, build, and much more.
-         * Many things will be disableable
-         */
-    }
 
-    public function HerobrineChat(){
-        /*
-         * Here will be Herobrines chat messages and a way to send them at random
-         */
-    }
-
-    public function HerobrineSign(){
-        /*
-         * Herobrine will place signs at random using this function
-         */
-    }
-
-    public function HerobrineGrief(){
-        /*
-         * Herobrine will randomly grief if enabled
-         */
-    }
-
-    public function HerobrineBuild(){
-        /*
-         * Herobrine will build at random if enabled
-         */
-    }
-
-    public function HerobrineMinion(){
-        /*
-         * Main Herobrines Minion function
-         */
-    }
-    
     public function onEvent(){
         //Not sure if ill need this yet but just in case
     }

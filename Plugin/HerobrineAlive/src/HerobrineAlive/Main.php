@@ -22,7 +22,7 @@ class Main extends PluginBase implements Listener, CommandExecutor{
                     $this->getServer()->getScheduler()->scheduleTask(new StartHerobrineAI($this), 1);
                     $sender->sendMessage("[HerobrineAlive] Herobrine has been released!");
                 }elseif($args[0] == "kill"){
-                    //Stop HerobrineAI() and remove his entity packets
+                    $this->getServer()->getScheduler()->scheduleTask(new StopHerobrineAI($this), 1);
                     $sender->sendMessage("[HerobrineAlive] Herobrine has been killed!");
                 }elseif($args[0] == "attack"){
                     if($args[1] == instance of player){
@@ -38,10 +38,6 @@ class Main extends PluginBase implements Listener, CommandExecutor{
         }
     }
 
-    public function onEvent(){
-        //Not sure if ill need this yet but just in case
-    }
-    
     public function onDisable(){
         $this->getLogger()->log("[INFO] HerobrineAlive Unloaded!");
     }

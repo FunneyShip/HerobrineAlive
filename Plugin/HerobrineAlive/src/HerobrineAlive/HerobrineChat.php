@@ -19,15 +19,15 @@ class HerobrineChat extends PluginTask{
         }elseif($chatid == "5"){
             $message = "<Herobrine> ";
         }elseif($chatid == "6"){
-            $message = "<Herobrine> ";
+            $message = "<Herobrine>you can't run away from me! ";
         }elseif($chatid == "7"){
-            $message = "<Herobrine> ";
+            $message = "<Herobrine>where are you i'm not can hurt you ";
         }elseif($chatid == "8"){
-            $message = "<Herobrine> ";
+            $message = "<Herobrine>i am your worst nightmares! ";
         }elseif($chatid == "9"){
-            $message = "<Herobrine> ";
+            $message = "<Herobrine> what can you exapet screaming!";
         }elseif($chatid == "10"){
-            $message = "<Herobrine> ";
+            $message = "<Herobrine>i have some candy come have some ";
         }
         //Broadcast $message
     }

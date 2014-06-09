@@ -6,7 +6,7 @@ use pocketmine\scheduler\PluginTask;
 
 class HerobrineChat extends PluginTask{
     public function onRun(){
-        $chatid = rand(1, 10);
+        $chatid = rand(1, 10); //Get a random number to choose the message text
         
         if($chatid == "1"){
             $message = "<Herobrine> Where is your god now?";
@@ -17,15 +17,18 @@ class HerobrineChat extends PluginTask{
         }elseif($chatid == "4"){
             $message = "<Herobrine> Your world is mine!";
         }elseif($chatid == "5"){
-            $message = "";
+            $message = "<Herobrine> ";
         }elseif($chatid == "6"){
-            $message = "";
+            $message = "<Herobrine> ";
         }elseif($chatid == "7"){
-            $message = "";
+            $message = "<Herobrine> ";
         }elseif($chatid == "8"){
-            $message = "";
+            $message = "<Herobrine> ";
         }elseif($chatid == "9"){
-            $message = "";
-        }elseif(){}
+            $message = "<Herobrine> ";
+        }elseif($chatid == "10"){
+            $message = "<Herobrine> ";
+        }
+        //Broadcast $message
     }
 }

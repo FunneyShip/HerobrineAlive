@@ -13,6 +13,6 @@ commands:
         usage: "/HerobrineAlive <RELEASE|KILL|ATTACK> [PLAYER]"
         permission: herobrinealive.command.herobrinealive
 permissions:
-    herobrinealive.command.herobrinealive
+    herobrinealive.command.herobrinealive:
         description: "Allows players to release, kil, or make Herobrine attack other players"
         default: false
